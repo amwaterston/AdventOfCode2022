@@ -1,0 +1,2 @@
+print(sum([([ord(i) - ord('A') + 27 if i.isupper() else ord(i) - ord('a') + 1 for i in r[:int(len(r)/2)] if i in r[int(len(r)/2):]])[0] for r in open("day 3 input.txt").read().split("\n")]))
+print(sum([ord(i) - ord('A') + 27 if i.isupper() else ord(i) - ord('a') + 1 for i in [set.intersection(*map(set, s)).pop() for s in [open("day 3 input.txt").read().split("\n")[i:i + 3] for i in range(0, len(open("day 3 input.txt").read().split("\n")), 3)]]]))

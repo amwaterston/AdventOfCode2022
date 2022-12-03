@@ -1,7 +1,5 @@
-def solution(x, y):
-    dx = (x * (x + 1))/2
-    dy = ((y * (y + 1))/2)
-    print((dx, dy))
-    return int(dx) + int(dy)
 
-print(solution(1, 4))
+def solution(x, y):
+    return int(((y+x-1) * (y+x) / 2) - (y - 1))
+
+print(solution(5, 10))
