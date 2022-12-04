@@ -1,0 +1,2 @@
+print(sum([(a <= x <= b and a <= y <= b) or (x <= a <= y and x <= b <= y) for (a, b), (x, y) in [[[int(x) for x in s.split("-")] for s in l.split(",")] for l in open("day 4 input.txt").readlines()]]))
+print(sum([any([a <= x <= b, a <= y <= b, x <= a <= y, x <= b <= y]) for (a, b), (x, y) in [[[int(x) for x in s.split("-")] for s in l.split(",")] for l in open("day 4 input.txt").readlines()]]))
